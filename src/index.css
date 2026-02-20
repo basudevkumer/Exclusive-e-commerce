@@ -1,1 +1,209 @@
+/* for font url */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* for tailwind css */
 @import "tailwindcss";
+@tailwind components;
+
+/* for all typography */
+
+@theme {
+  /* for font */
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* for color set */
+  --color-primary: #ffffff;
+  --color-primary1: #363738;
+  --color-secondary: #f5f5f5;
+  --color-Secondary1: #fefaf1;
+  --color-Secondary2: #db4444;
+  --color-text: #fafafa;
+  --color-text1: #7d8184;
+  --color-text2: #000000;
+  --color-button: #000000;
+  --color-button1: #00ff66;
+  --color-button2: #db4444;
+  --color-hoverButtonRed: #e07575;
+  --color-hoverButtonSky: #a0bce0;
+  --color-thirtyParcent: #0000004d;
+}
+
+/* for css resuable component  */
+
+@layer components {
+  /* for heading 110px */
+  .heading110PXBold {
+    @apply text-[110px]/[115px] font-bold font-inter tracking-[3%];
+  }
+  .heading110PXSemiBold {
+    @apply text-[110px]/[115px] font-semibold font-inter tracking-[3%];
+  }
+  .heading110PXMedium {
+    @apply text-[110px]/[115px] font-medium font-inter tracking-[3%];
+  }
+  .heading110PXRegular {
+    @apply text-[110px]/[115px] font-normal font-inter tracking-[3%];
+  }
+
+  /* for heading 90px */
+  .heading90PXBold {
+    @apply text-[90px]/[98px] font-bold font-inter tracking-[5%];
+  }
+  .heading90PXSemiBold {
+    @apply text-[90px]/[98px] font-semibold font-inter tracking-[5%];
+  }
+  .heading90PXMedium {
+    @apply text-[90px]/[98px] font-medium font-inter tracking-[5%];
+  }
+  .heading90PXRegular {
+    @apply text-[90px]/[98px] font-normal font-inter tracking-[5%];
+  }
+  /* for heading 64px */
+  .heading64PXBold {
+    @apply text-[64px]/[68px] font-bold font-inter tracking-[5%];
+  }
+  .heading64PXSemiBold {
+    @apply text-[64px]/[68px] font-semibold font-inter tracking-[5%];
+  }
+  .heading64PXMedium {
+    @apply text-[64px]/[68px] font-medium font-inter tracking-[5%];
+  }
+  .heading64PXRegular {
+    @apply text-[64px]/[68px] font-normal font-inter tracking-[5%];
+  }
+  /* for heading 54px */
+  .heading54PXBold {
+    @apply text-[54px]/[64px] font-bold font-inter tracking-[5%];
+  }
+  .heading54PXSemiBold {
+    @apply text-[54px]/[64px] font-semibold font-inter tracking-[5%];
+  }
+  .heading54PXMedium {
+    @apply text-[54px]/[64px] font-medium font-inter tracking-[5%];
+  }
+  .heading54PXRegular {
+    @apply text-[54px]/[64px] font-normal font-inter tracking-[5%];
+  }
+
+  /* for heading 48px */
+  .heading48PXBold {
+    @apply text-[48px]/[52px] font-bold font-inter tracking-[4%];
+  }
+  .heading48PXSemiBold {
+    @apply text-[48px]/[52px] font-semibold font-inter tracking-[4%];
+  }
+  .heading48PXMedium {
+    @apply text-[48px]/[52px] font-medium font-inter tracking-[4%];
+  }
+  .heading48PXRegular {
+    @apply text-[48px]/[52px] font-normal font-inter tracking-[4%];
+  }
+  /* for heading 36px */
+  .heading36PXBold {
+    @apply text-[36px]/[30px] font-bold font-inter tracking-[4%];
+  }
+  .heading36PXSemiBold {
+    @apply text-[36px]/[30px] font-semibold font-inter tracking-[4%];
+  }
+  .heading36PXMedium {
+    @apply text-[36px]/[30px] font-medium font-inter tracking-[4%];
+  }
+  .heading36PXRegular {
+    @apply text-[36px]/[30px] font-normal font-inter tracking-[4%];
+  }
+  /* for heading 24px */
+  .heading24PXBold {
+    @apply text-[24px]/[24px] font-bold font-inter tracking-[3%];
+  }
+  .heading24PXSemiBold {
+    @apply text-[24px]/[24px] font-semibold font-inter tracking-[3%];
+  }
+  .heading24PXMedium {
+    @apply text-[24px]/[24px] font-medium font-inter tracking-[3%];
+  }
+  .heading24PXRegular {
+    @apply text-[24px]/[24px] font-normal font-inter tracking-[3%];
+  }
+  /* for heading 20px */
+  .heading20PXBold {
+    @apply text-[20px]/[240x] font-bold font-inter tracking-[3%];
+  }
+  .heading20PXSemiBold {
+    @apply text-[20px]/[240x] font-semibold font-inter tracking-[3%];
+  }
+  .heading20PXMedium {
+    @apply text-[20px]/[240x] font-medium font-inter tracking-[3%];
+  }
+  .heading20PXRegular {
+    @apply text-[20px]/[240x] font-normal font-inter tracking-[3%];
+  }
+  /* for heading 32px */
+  .heading32PXBold {
+    @apply text-[32px]/[30px] font-bold font-inter tracking-[4%];
+  }
+  .heading32PXSemiBold {
+    @apply text-[32px]/[30px] font-semibold font-inter tracking-[4%];
+  }
+  .heading32PXMedium {
+    @apply text-[32px]/[30px] font-medium font-inter tracking-[4%];
+  }
+  .heading32PXRegular {
+    @apply text-[32px]/[30px] font-normal font-inter tracking-[4%];
+  }
+
+  /* for title */
+  /* for title 24PX  */
+
+  .title24PXSemiBold {
+    @apply text-[24px]/[32px] font-semibold font-poppins;
+  }
+  .title24PXMedium {
+    @apply text-[24px]/[32px] font-medium font-poppins;
+  }
+  .title24PXRegular {
+    @apply text-[24px]/[32px] font-normal font-poppins;
+  }
+
+  /* for title 20PX  */
+  .title20PXSemiBold {
+    @apply text-[20px]/[28px] font-semibold font-poppins;
+  }
+  .title20PXMedium {
+    @apply text-[20px]/[28px] font-medium font-poppins;
+  }
+  .title20PXRegular {
+    @apply text-[20px]/[26px] font-normal font-poppins;
+  }
+  /* for title 16PX  */
+  .title16PXSemiBold {
+    @apply text-[16px]/[20px] font-semibold font-poppins;
+  }
+  .title16PXMedium {
+    @apply text-[16px]/[24px] font-medium font-poppins;
+  }
+  .title16PXRegular {
+    @apply text-[16px]/[24px] font-normal font-poppins;
+  }
+  /* for title 14PX  */
+  .title14PXSemiBold {
+    @apply text-[14px]/[21px] font-semibold font-poppins;
+  }
+  .title14PXMedium {
+    @apply text-[14px]/[21px] font-medium font-poppins;
+  }
+  .title14PXRegular {
+    @apply text-[14px]/[21px] font-normal font-poppins;
+  }
+  /* for title 12PX  */
+  .title12PXSemiBold {
+    @apply text-[12px]/[18px] font-semibold font-poppins;
+  }
+  .title12PXMedium {
+    @apply text-[12px]/[18px] font-medium font-poppins;
+  }
+  .title12PXRegular {
+    @apply text-[12px]/[18px] font-normal font-poppins;
+  }
+}
