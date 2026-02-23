@@ -2,6 +2,13 @@ import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
+import { IoMdSend } from "react-icons/io";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 export const allIcon = {
   navIcon: [
@@ -10,4 +17,31 @@ export const allIcon = {
     { id: 3, icon: <FaRegUser /> },
   ],
   searchIcon: <IoIosSearch />,
+  send: <IoMdSend />,
+  socialLinks: [
+    {
+      id: 1,
+      icon: <FaFacebookF/>,
+      url: "https://facebook.com",
+      label: "Facebook",
+    },
+    {
+      id: 2,
+      icon: <FaTwitter/>,
+      url: "https://twitter.com",
+      label: "Twitter",
+    },
+    {
+      id: 3,
+      icon: <FaInstagram/>,
+      url: "https://instagram.com",
+      label: "Instagram",
+    },
+    {
+      id: 4,
+      icon: <FaLinkedinIn/>,
+      url: "https://linkedin.com",
+      label: "LinkedIn",
+    },
+  ],
 };
