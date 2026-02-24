@@ -1,10 +1,8 @@
-import React from 'react'
-import Signup from '../component/auth/signup/Index'
+import React from "react";
+import Signup from "../component/auth/signup/Index";
 
 const SignupPg = () => {
-  return (
-    <Signup/>
-  )
-}
+  return <Signup />;
+};
 
-export default SignupPg
+export default SignupPg;

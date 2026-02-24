@@ -3,12 +3,32 @@ import Container from "../../commonComponent/Container";
 import allImages from "../../../helper/imageProvider";
 import Button from "../../commonComponent/Button";
 import { allIcon } from "../../../helper/IconProvider";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+// for auth schema
+
+const signInSchema = z.object({
+  email: z.string().email("Invalid email address"),
+  password: z.string().min(6, "Password must be at least 6 characters"),
+});
 
 const SignIn = () => {
   // for icon images
   const { authImage } = allImages;
-  const { google } = allIcon;
+  // for react hook form
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(signInSchema),
+  });
 
+  //for login data
+  const onSubmit = (data) => console.log(data);
   return (
     <section className="relative overflow-hidden lg:pt-[60px] lg:pb-[140px]">
       <Container>
@@ -44,34 +64,47 @@ const SignIn = () => {
               w-full 
               max-w-[371px] 
             "
+              onSubmit={handleSubmit(onSubmit)}
             >
               <h4 className="text-text2  heading36PXMedium">
-              Log in to Exclusive
+                Log in to Exclusive
               </h4>
               <p className="title16PXRegular text-text2 pt-6 pb-12">
                 Enter your details below
               </p>
 
               <div className="flex flex-col gap-y-10">
-                
                 <input
                   type="email"
                   placeholder="Email  "
                   className="placeholder:text-[#00000051] title16PXRegular text-[#00000051] border-b-2 border-[#00000030] py-2 "
+                  {...register("email")}
                 />
+                {errors.email && (
+                  <p className="text-red-500 title16PXRegular">
+                    {errors.email.message}
+                  </p>
+                )}
                 <input
                   type="password"
                   placeholder="Password"
                   className="placeholder:text-[#00000051] title16PXRegular text-[#00000051] border-b-2 border-[#00000030] py-2  "
+                  {...register("password")}
+                />
+                {errors.password && (
+                  <p className="text-red-500 title16PXRegular">
+                    {errors.password  .message}
+                  </p>
+                )}
+              </div>
+
+              <div className="flex items-center gap-x-[87px] mt-10">
+                <Button children={"Log In"} />
+                <Button
+                  children={"Forget Password?"}
+                  className={"!p-0 bg-transparent !text-secondary2"}
                 />
               </div>
-               
-               <div className="flex items-center gap-x-[87px] mt-10">
-                <Button children={"Log In"}/>
-                <Button children={"Forget Password?"} className={"!p-0 bg-transparent !text-secondary2"}/>
-
-               </div>
-
             </form>
           </div>
         </div>
