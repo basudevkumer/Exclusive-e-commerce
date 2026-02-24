@@ -1,11 +1,13 @@
+
 import Navbar from "./component/commonComponent/Navbar";
-import SignInPg from "./page/SignInPg";
+
+import SignupPg from "./page/SignupPg";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <SignInPg />
+      <SignupPg />
     </>
   );
 };
