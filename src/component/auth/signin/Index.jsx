@@ -4,7 +4,7 @@ import allImages from "../../../helper/imageProvider";
 import Button from "../../commonComponent/Button";
 import { allIcon } from "../../../helper/IconProvider";
 
-const Signup = () => {
+const SignIn = () => {
   // for icon images
   const { authImage } = allImages;
   const { google } = allIcon;
@@ -43,23 +43,17 @@ const Signup = () => {
               className="
               w-full 
               max-w-[371px] 
-             
-           
             "
             >
               <h4 className="text-text2  heading36PXMedium">
-                Create an account
+              Log in to Exclusive
               </h4>
               <p className="title16PXRegular text-text2 pt-6 pb-12">
                 Enter your details below
               </p>
 
               <div className="flex flex-col gap-y-10">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="placeholder:text-[#00000051] title16PXRegular text-[#00000051] border-b-2 border-[#00000030] py-2  "
-                />
+                
                 <input
                   type="email"
                   placeholder="Email  "
@@ -71,21 +65,13 @@ const Signup = () => {
                   className="placeholder:text-[#00000051] title16PXRegular text-[#00000051] border-b-2 border-[#00000030] py-2  "
                 />
               </div>
-              <div className="mt-[56px] space-y-4">
-                <Button children={"Create Account"} />
-                <button className=" flex cursor-pointer items-center justify-center gap-x-4 py-4 title16PXRegular text-text2 w-full rounded-[6px] border-2 border-[#00000051]">
-                  <span className="text-xl">{google}</span>
-                  Sign up with Google
-                </button>
-              </div>
-              <div className="flex gap-x-3 items-center mt-8 justify-center">
-                <p className="title16PXRegular text-[#00000099]">
-                  Already have account?
-                </p>
-                <button className="text-text2 title16PXRegular   border-b  border-[#00000051] cursor-pointer ">
-                  Log in
-                </button>
-              </div>
+               
+               <div className="flex items-center gap-x-[87px] mt-10">
+                <Button children={"Log In"}/>
+                <Button children={"Forget Password?"} className={"!p-0 bg-transparent !text-secondary2"}/>
+
+               </div>
+
             </form>
           </div>
         </div>
@@ -94,4 +80,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignIn;
