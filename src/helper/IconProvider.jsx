@@ -9,6 +9,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+
 
 export const allIcon = {
   navIcon: [
@@ -43,5 +45,7 @@ export const allIcon = {
       url: "https://linkedin.com",
       label: "LinkedIn",
     },
+
   ],
+  google:<FcGoogle/>
 };

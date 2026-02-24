@@ -1,9 +1,12 @@
-import React from 'react'
-import Footer from './component/commonComponent/Footer'
+
+import SignupPg from './page/SignupPg'
+import Navbar from "./component/commonComponent/Navbar"
 
 const App = () => {
   return (
-    <Footer/>
+    <>
+    <Navbar/>
+    <SignupPg/></>
   )
 }
 

@@ -209,5 +209,12 @@
 }
 
 .l{
-  color: #ffffff32;
+  color: #000000c2;
+}
+
+/* for input */
+
+input:focus-visible {
+      outline: none;
+      
 }
