@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOutline } from "react-icons/io5";
+import { FaStar } from "react-icons/fa6";
 
 export const allIcon = {
   navIcon: [
@@ -48,4 +49,5 @@ export const allIcon = {
   ],
   google: <FcGoogle />,
   eye: <IoEyeOutline />,
+  star: <FaStar />,
 };
