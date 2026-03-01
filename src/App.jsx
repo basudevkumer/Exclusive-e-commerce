@@ -1,12 +1,12 @@
 
-import Button2 from "./component/commonComponent/Button2";
-import CategoryCart from "./component/commonComponent/CategoryCart";
+import AboutStateData from "./component/commonComponent/AboutStateData";
+  
 
 
 const App = () => {
   return (
     <div className="grid grid-cols-5 m-10 ">
-      <CategoryCart />
+      <AboutStateData />
     </div>
   );
 };

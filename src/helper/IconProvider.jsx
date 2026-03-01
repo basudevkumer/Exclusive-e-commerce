@@ -31,7 +31,6 @@ import {
   FaSmileBeam,
   FaMobileAlt,
   FaBasketballBall,
-  
   FaTabletAlt,
   FaCar,
   FaShoppingBag,
@@ -39,6 +38,9 @@ import {
 
 import { GiDress, GiHighHeel, GiNecklace, GiSunglasses } from "react-icons/gi";
 import { MdOutlineWatch } from "react-icons/md";
+import { FaStore, FaDollarSign, FaChartLine } from "react-icons/fa";
+
+
 
 export const allIcon = {
   navIcon: [
@@ -95,7 +97,7 @@ export const allIcon = {
     { id: 13, name: "Skin Care", icon: <FaSmileBeam /> },
     { id: 14, name: "Smartphones", icon: <FaMobileAlt /> },
     { id: 15, name: "Sports Accessories", icon: <FaBasketballBall /> },
-    { id: 16, name: "Sunglasses", icon: <GiSunglasses   /> },
+    { id: 16, name: "Sunglasses", icon: <GiSunglasses /> },
     { id: 17, name: "Tablets", icon: <FaTabletAlt /> },
     { id: 18, name: "Tops", icon: <FaTshirt /> },
     { id: 19, name: "Vehicle", icon: <FaCar /> },
@@ -104,8 +106,38 @@ export const allIcon = {
     { id: 22, name: "Womens Jewellery", icon: <GiNecklace /> },
     { id: 23, name: "Womens Shoes", icon: <GiHighHeel /> },
     { id: 24, name: "Womens Watches", icon: <FaClock /> },
-  ],  
+  ],
+
+  statsData: [
+    {
+      id: 1,
+      value: "10.5k",
+      label: "Sellers active on our site",
+      icon: <FaStore />,
+      highlight: false,
+    },
+    {
+      id: 2,
+      value: "33k",
+      label: "Monthly Product Sale",
+      icon: <FaDollarSign />,
+      highlight: true, 
+    },
+    {
+      id: 3,
+      value: "45.5k",
+      label: "Customer active in our site",
+      icon: <FaShoppingBag />,
+      highlight: false,
+    },
+    {
+      id: 4,
+      value: "25k",
+      label: "Annual gross sale in our site",
+      icon: <FaChartLine />,
+      highlight: false,
+    },
+  ],
 };
 
-
-export default allIcon
+export default allIcon;
