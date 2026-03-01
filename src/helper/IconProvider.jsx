@@ -12,6 +12,10 @@ import {
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { GrCart } from "react-icons/gr";
+
+
 
 export const allIcon = {
   navIcon: [
@@ -50,4 +54,6 @@ export const allIcon = {
   google: <FcGoogle />,
   eye: <IoEyeOutline />,
   star: <FaStar />,
+  deletes: <RiDeleteBin6Line/>,
+  cart:<GrCart/>
 };
