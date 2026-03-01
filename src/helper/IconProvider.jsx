@@ -39,8 +39,9 @@ import {
 import { GiDress, GiHighHeel, GiNecklace, GiSunglasses } from "react-icons/gi";
 import { MdOutlineWatch } from "react-icons/md";
 import { FaStore, FaDollarSign, FaChartLine } from "react-icons/fa";
-
-
+import { TbTruckDelivery } from "react-icons/tb";
+import { PiHeadset } from "react-icons/pi";
+import { HiOutlineShieldCheck } from "react-icons/hi";
 
 export const allIcon = {
   navIcon: [
@@ -121,7 +122,7 @@ export const allIcon = {
       value: "33k",
       label: "Monthly Product Sale",
       icon: <FaDollarSign />,
-      highlight: true, 
+      highlight: true,
     },
     {
       id: 3,
@@ -136,6 +137,28 @@ export const allIcon = {
       label: "Annual gross sale in our site",
       icon: <FaChartLine />,
       highlight: false,
+    },
+  ],
+
+  
+  serviceFeatures: [
+    {
+      id: 1,
+      title: "FREE AND FAST DELIVERY",
+      description: "Free delivery for all orders over $140",
+      icon: <TbTruckDelivery />,
+    },
+    {
+      id: 2,
+      title: "24/7 CUSTOMER SERVICE",
+      description: "Friendly 24/7 customer support",
+      icon: <PiHeadset />,
+    },
+    {
+      id: 3,
+      title: "MONEY BACK GUARANTEE",
+      description: "We return money within 30 days",
+      icon: <HiOutlineShieldCheck />,
     },
   ],
 };
