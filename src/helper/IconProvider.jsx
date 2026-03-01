@@ -10,7 +10,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-
+import { IoEyeOutline } from "react-icons/io5";
 
 export const allIcon = {
   navIcon: [
@@ -23,29 +23,29 @@ export const allIcon = {
   socialLinks: [
     {
       id: 1,
-      icon: <FaFacebookF/>,
+      icon: <FaFacebookF />,
       url: "https://facebook.com",
       label: "Facebook",
     },
     {
       id: 2,
-      icon: <FaTwitter/>,
+      icon: <FaTwitter />,
       url: "https://twitter.com",
       label: "Twitter",
     },
     {
       id: 3,
-      icon: <FaInstagram/>,
+      icon: <FaInstagram />,
       url: "https://instagram.com",
       label: "Instagram",
     },
     {
       id: 4,
-      icon: <FaLinkedinIn/>,
+      icon: <FaLinkedinIn />,
       url: "https://linkedin.com",
       label: "LinkedIn",
     },
-
   ],
-  google:<FcGoogle/>
+  google: <FcGoogle />,
+  eye: <IoEyeOutline />,
 };

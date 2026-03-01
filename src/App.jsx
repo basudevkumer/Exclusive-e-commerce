@@ -1,14 +1,11 @@
-
-import Navbar from "./component/commonComponent/Navbar";
-
-import SignInPg from "./page/SignInPg" 
+import React from "react";
+import ProductCard from "./component/commonComponent/ProductCard";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <SignInPg />
-    </>
+    <div className="grid grid-cols-5 m-10">
+      <ProductCard />
+    </div>
   );
 };
 
