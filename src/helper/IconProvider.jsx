@@ -42,6 +42,10 @@ import { FaStore, FaDollarSign, FaChartLine } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
 import { PiHeadset } from "react-icons/pi";
 import { HiOutlineShieldCheck } from "react-icons/hi";
+import { RiLinkedinLine } from "react-icons/ri";
+
+import { CiInstagram } from "react-icons/ci";
+import { CiTwitter } from "react-icons/ci";
 
 export const allIcon = {
   navIcon: [
@@ -140,7 +144,6 @@ export const allIcon = {
     },
   ],
 
-  
   serviceFeatures: [
     {
       id: 1,
@@ -160,6 +163,11 @@ export const allIcon = {
       description: "We return money within 30 days",
       icon: <HiOutlineShieldCheck />,
     },
+  ],
+  teamSocialIcons: [
+    { id: 1, icon: <CiTwitter />, href: "https://twitter.com" },
+    { id: 2, icon: <CiInstagram />, href: "https://instagram.com" },
+    { id: 3, icon: <RiLinkedinLine />, href: "https://linkedin.com" },
   ],
 };
 
