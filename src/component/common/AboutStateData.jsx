@@ -1,7 +1,7 @@
 import React from "react";
 import allIcon from "../../helper/IconProvider";
 
-const AboutStateData = () => {
+const AboutStateData = ({icon,title,description}) => {
   const { statsData } = allIcon;
 
   return (
@@ -11,18 +11,17 @@ const AboutStateData = () => {
           className="text-[30px] p-3 bg-button text-primary group-hover:text-button group-hover:bg-primary inline-block rounded-full  group-hover:transition group-hover:duration-700 group-hover:ease-in-out 
 "
         >
-          {statsData[0].icon}
+          {icon}
         </span>
-       
       </div>
       <h3 className="heading32PXBold group-hover:text-text text-text2 group-hover:transition group-hover:duration-700 group-hover:ease-in-out">
-        {statsData[0].value}
+        {title}
       </h3>
-      <p className="text-button break-all title16PXRegular  group-hover:text-text group-hover:transition group-hover:duration-700 group-hover:ease-in-out ">{statsData[0].label}</p>
+      <p className="text-button break-all title16PXRegular  group-hover:text-text group-hover:transition group-hover:duration-700 group-hover:ease-in-out ">
+        {description}
+      </p>
     </div>
   );
 };
-
-
 
 export default AboutStateData;
